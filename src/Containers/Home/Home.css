@@ -1,0 +1,30 @@
+.home{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    height: 560px;
+    background-color: red;
+}
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+    height: 560px;
+    width: 200px;
+}
+.links{
+    display: flex;
+    height: 40px;
+    background-color: black;
+    color:white;
+    text-align: left;
+    align-items: center;
+    padding-left: 20px;
+}
+.one{
+    padding-top:10px;
+}
+.links:hover{
+    background-color: blue;
+    color:azure;
+}
