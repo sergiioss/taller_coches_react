@@ -5,7 +5,7 @@ import './Admin.css'
 const Admin = () => {
 
     return (
-        <div>
+        <div className="admin">
             Admin
         </div>
     )

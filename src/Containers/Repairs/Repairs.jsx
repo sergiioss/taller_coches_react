@@ -5,7 +5,7 @@ import './Repairs.css'
 const Repairs = () => {
 
     return (
-        <div>
+        <div className="repairs">
             Repairs
         </div>
     )

@@ -1,0 +1,7 @@
+.admin{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: red;
+    height: 75vh;
+}

@@ -1,14 +1,15 @@
 import React from 'react'
 import './Home.css'
+import { NavLink } from "react-router-dom"
 
 const Home = () => {
-
+    
     return (
         <div className="home">
             <div>
                 <div className="sidebar">
-                    <div><a className="links one" href="http://www.google.com" target="blank" >Reparaciones</a></div>
-                    <div className="links">Admin</div>
+                    <div><NavLink className="links one" to="/repairs">Reparaciones</NavLink></div>
+                    <div><NavLink className="links one" to="/admin">Admin</NavLink></div>
 
                 </div>
             </div>
