@@ -3,5 +3,5 @@
     justify-content: center;
     align-items: center;
     height: 100px;
-    background-color: blue;
+    background-image: radial-gradient(circle at 60.02% 12.61%, #413532 0, #3d2f2c 12.5%, #372523 25%, #2e1817 37.5%, #250404 50%, #1f0000 62.5%, #190000 75%, #120000 87.5%, #0b0000 100%);
 }

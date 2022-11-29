@@ -16,7 +16,8 @@ const Home = () => {
             </div>
             <div className="cont">
                 <div className="news">
-                    HOLA
+                    BIENVENIDO A TU TALLER <br/> 
+                    DE CONFIANZA!!
                 </div>
             </div>
         </div>

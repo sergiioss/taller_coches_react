@@ -2,22 +2,22 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    height: auto;
+    flex-direction:row;
     background-color: red;
-    background-image: url(https://img.remediosdigitales.com/49aa86/hss-storage-midas-994c14fecc8c90586fda7011b437db06-205190306-1-copia/1366_2000.jpg);
+    background-image: url(https://files.porsche.com/filestore/image/multimedia/none/porscheservice-serviceandorgininalparts-maintenance-banner/normal/5898ffc5-d916-11e4-a2ef-001a64c55f5c/porsche-normal.jpg);
     background-size:cover;
 }
 .sidebar{
-    display: flex;
+    display:inline-block;
     flex-direction: column;
-    background-color: black;
-    height: 100vh;
+    background-image: radial-gradient(circle at 50.35% 49.05%, #703719 0, #682f1a 10%, #5d2519 20%, #4f1b16 30%, #3f1111 40%, #2e0606 50%, #210000 60%, #120000 70%, #000000 80%, #000000 90%, #000000 100%);
     width: 200px;
+    opacity:0.8;
+    height: 557px;
 }
 .links{
     display: flex;
     height: 40px;
-    background-color: black;
     color:white;
     text-align: left;
     align-items: center;
@@ -25,9 +25,20 @@
 }
 .one{
     text-decoration: none;
-    padding-top:10px;
 }
 .links:hover{
-    background-color: blue;
+    background-color: rgb(243, 7, 7);
     color:azure;
 }
+.news{
+    display: flex;
+    text-align:start;
+    align-items: flex-end;
+    vertical-align: text-top;
+    height: 230px;
+    padding-left:30px;
+    color:hsl(3, 150%, 50%);
+    font-size:40px;
+    font-weight: bolder;
+}
+
