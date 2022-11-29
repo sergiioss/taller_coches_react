@@ -2,14 +2,16 @@
     display: flex;
     justify-content: left;
     align-items: center;
-    height: 560px;
+    height: auto;
     background-color: red;
+    background-image: url(https://img.remediosdigitales.com/49aa86/hss-storage-midas-994c14fecc8c90586fda7011b437db06-205190306-1-copia/1366_2000.jpg);
+    background-size:cover;
 }
 .sidebar{
     display: flex;
     flex-direction: column;
     background-color: black;
-    height: 560px;
+    height: 100vh;
     width: 200px;
 }
 .links{
@@ -22,6 +24,7 @@
     padding-left: 20px;
 }
 .one{
+    text-decoration: none;
     padding-top:10px;
 }
 .links:hover{
