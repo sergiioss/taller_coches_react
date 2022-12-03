@@ -1,7 +1,18 @@
 .repairs{
     display: flex;
     justify-content: left;
-    align-items: center;
-    background-color: red;
-    height: 100vh;
+    align-items: flex-start;
+    flex-direction: column;
+    background-color: white;
+    height: 73.6vh;
+}
+.back{
+    all:unset;
+    color:black;
+    cursor:pointer;
+    margin-left: 20px;
+}
+.arrow{
+    height: 15px;
+    padding-right: 10px;
 }
