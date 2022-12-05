@@ -1,0 +1,72 @@
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width: 75vw;
+    height: auto;
+    background-color: blue;
+    margin: 15px;
+    padding: 5px;
+}
+.head{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 75vw;
+    height: 140px;
+    background-color: white;
+}
+.headF{
+    width: 280px;
+    height: 140px;
+    background-color: aqua;
+    border-right: 2px solid;
+}
+.headS{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 160px;
+    height: 140px;
+    background-color: blanchedalmond;
+    border-right: 2px solid;
+}
+.headSF{
+    width: 160px;
+    height: 100px;
+    background-color: blueviolet;
+    border-bottom: 2px solid;
+}
+.headSS{
+    width: 160px;
+    height: 60px;
+}
+.headT{
+    width: 320px;
+    height: 140px;
+    border-right: 2px solid;
+    background-color: rgb(231, 136, 12);
+}
+.separation{
+    width: 75vw;
+    height: 10px;
+    background-color: black;
+}
+.bod{
+    width: 75vw;
+    height: 300px;
+    background-color: white;
+}
+.tec{
+    width: 75vw;
+    height: 200px;
+    background-color: red;
+}
+.support{
+    width: 75vw;
+    height: 150px;
+    background-color: yellow;
+}

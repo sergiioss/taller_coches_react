@@ -4,7 +4,7 @@
     align-items: flex-start;
     flex-direction: column;
     background-color: white;
-    height: 73.6vh;
+    height: auto;
 }
 .back{
     all:unset;
@@ -15,4 +15,13 @@
 .arrow{
     height: 15px;
     padding-right: 10px;
+}
+.rep{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: white;
+    width: 100vw;
+    height: auto;
 }

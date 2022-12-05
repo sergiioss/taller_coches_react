@@ -4,21 +4,23 @@ import { NavLink } from 'react-router-dom'
 import { useState } from 'react'
 import axios from 'axios'
 import { useEffect } from 'react'
+import Card from '../../Components/Card/Card'
+import { produceWithPatches } from 'immer'
 
 
-const Repairs = () => {
+const Repairs = (props) => {
     const [repairs, setRepairs] = useState({
-        repair:[]
+        repair: []
     });
-    
-    useEffect(()=>{
+
+    useEffect(() => {
         axios.get('https://tallercochesmongoose-production.up.railway.app/api/repairs')
-        .then(resp=>{
-            setRepairs({
-                repair: resp.data.repairs
+            .then(resp => {
+                setRepairs({
+                    repair: resp.data.repairs
+                })
             })
-        })
-    },[])
+    }, [])
     console.log(repairs.repair)
 
     return (
@@ -27,13 +29,12 @@ const Repairs = () => {
             </div>
             {/* icono cargando */}
             {/* https://cdn-icons-png.flaticon.com/512/3305/3305803.png */}
-
-            <div>
-            {
-                repairs.repair.map((rep, i) => (
-                    <div key={i} data={rep}></div>
-                ))
-            }
+            <div className="rep">
+                {
+                    repairs.repair.map((rep, i) =>
+                        <Card className="rep" data={rep} key={i} />
+                    )
+                }
             </div>
         </div>
     )
