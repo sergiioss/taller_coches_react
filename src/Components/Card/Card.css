@@ -86,3 +86,54 @@
     height: 150px;
     background-color: yellow;
 }
+.bodContF{
+    height: 20px;
+    background-color: blueviolet;
+    border-bottom: 2px solid;
+}
+.bodContS{
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding-left: 8px;
+    height: auto;
+    background-color: blanchedalmond;
+    border-bottom:2px solid;
+}
+.bodContT{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+.title{
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-bottom: 1.5px;
+    width: 200px;
+    text-align: left;
+    background-color: brown;
+}
+.description{
+    width: 400px;
+}
+.tec{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.tecn{
+    text-align: center;
+    width: 75vw;
+    height: 30px;
+    background-color: rgb(157, 157, 241);
+}
+.tecDesc{
+    padding: 5px;
+    text-align: justify;
+    height: 200px;
+    width: 74.3vw;
+    background-color: aqua;
+}
+
