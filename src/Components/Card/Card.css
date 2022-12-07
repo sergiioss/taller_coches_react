@@ -35,12 +35,18 @@
     border-right: 2px solid;
 }
 .headSF{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 160px;
     height: 100px;
     background-color: blueviolet;
     border-bottom: 2px solid;
 }
 .headSS{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 160px;
     height: 60px;
 }
@@ -49,6 +55,12 @@
     height: 140px;
     border-right: 2px solid;
     background-color: rgb(231, 136, 12);
+}
+.headTS{
+    height: 45px;
+    padding-top: 5px;
+    padding-left: 5px;
+    text-align: left;
 }
 .separation{
     width: 75vw;
@@ -108,8 +120,9 @@
 }
 .title{
     padding-left: 8px;
-    padding-top: 8px;
-    padding-bottom: 1.5px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    height: 23.5px;
     width: 200px;
     text-align: left;
     background-color: brown;
@@ -135,5 +148,9 @@
     height: 200px;
     width: 74.3vw;
     background-color: aqua;
+}
+.logo{
+    padding-top: 2px;
+    height: 135px;
 }
 
