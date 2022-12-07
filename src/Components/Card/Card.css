@@ -1,156 +1,72 @@
-.card{
+.cardCont{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction:column;
-    width: 75vw;
+    flex-direction: column;
+    width: 70vw;
     height: auto;
     background-color: blue;
-    margin: 15px;
-    padding: 5px;
+    padding: 10px;
+    margin: 10px;
 }
-.head{
+.logEm{
+    height: 130px;
+}
+.logEme{
+    padding-top: 5px;
+    height: 140px;
+    background-color: antiquewhite;
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+.repT{
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
-    width: 75vw;
-    height: 140px;
-    background-color: white;
-}
-.headF{
-    width: 280px;
-    height: 140px;
-    background-color: aqua;
-    border-right: 2px solid;
-}
-.headS{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 160px;
-    height: 140px;
-    background-color: blanchedalmond;
-    border-right: 2px solid;
-}
-.headSF{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 160px;
-    height: 100px;
+    width: 150px;
+    height: 80px;
     background-color: blueviolet;
-    border-bottom: 2px solid;
-}
-.headSS{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 160px;
-    height: 60px;
-}
-.headT{
-    width: 320px;
-    height: 140px;
+    border-top: 2px solid;
     border-right: 2px solid;
-    background-color: rgb(231, 136, 12);
+    border-left: 2px solid;
+
 }
-.headTS{
-    height: 45px;
+.repC{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 60px;
+    background-color: rgb(202, 136, 24);
+    border-right: 2px solid;
+    border-top: 2px solid;
+    border-left: 2px solid;
+}
+.htitle{
+    width: 440px;
+    height: 35px;
     padding-top: 5px;
     padding-left: 5px;
-    text-align: left;
-}
-.separation{
-    width: 75vw;
-    height: 10px;
-    background-color: black;
-}
-.bod{
-    display: flex;
-    justify-content: left;
-    align-items: center;
-    flex-direction: row;
-    width: 75vw;
-    height: 300px;
-    background-color: white;
-}
-.bodCont{
-    width: 600px;
-    height: 300px;
-    background-color: cadetblue;
+    background-color: brown;
+    border-top: 2px solid;
     border-right: 2px solid;
 }
-.bodIm{
-    width: 200px;
-    height: 150px;
-    background-color: chocolate;
-    margin-left:150px;
+.htitleC{
+    width: 440px;
+    height: 35px;
+    padding-top: 5px;
+    padding-left: 5px;
+    background-color: rgb(38, 146, 69);
+    border-top: 2px solid;
+    border-right: 2px solid;
 }
-.tec{
-    width: 75vw;
-    height: 200px;
-    background-color: red;
-}
-.support{
-    width: 75vw;
-    height: 150px;
-    background-color: yellow;
-}
-.bodContF{
-    height: 20px;
-    background-color: blueviolet;
-    border-bottom: 2px solid;
-}
-.bodContS{
-    display: flex;
-    align-items: center;
-    text-align: left;
-    padding-left: 8px;
-    height: auto;
-    background-color: blanchedalmond;
-    border-bottom:2px solid;
-}
-.bodContT{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-}
-.title{
-    padding-left: 8px;
-    padding-top: 6px;
-    padding-bottom: 6px;
-    height: 23.5px;
-    width: 200px;
-    text-align: left;
-    background-color: brown;
-}
-.description{
-    width: 400px;
-}
-.tec{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.tecn{
+.descri{
+    border-top:2px solid;
+    border-left:2px solid;
+    border-right:2px solid;
     text-align: center;
-    width: 75vw;
-    height: 30px;
-    background-color: rgb(157, 157, 241);
 }
-.tecDesc{
-    padding: 5px;
-    text-align: justify;
-    height: 200px;
-    width: 74.3vw;
-    background-color: aqua;
+.content{
+    text-align: left;
+    padding-left:10px;
 }
-.logo{
-    padding-top: 2px;
-    height: 135px;
-}
-
