@@ -1,6 +1,6 @@
 import React from 'react'
 import './Card.css'
-import {Container, Col, Row} from 'react-bootstrap'
+import { Container, Col, Row } from 'react-bootstrap'
 
 
 const Card = (props) => {
@@ -9,7 +9,7 @@ const Card = (props) => {
             {/* ************** <-- Header --> ************* */}
 
             <Row>
-                <Col className="logEme"><img className="logEm" src="https://cdn.niviweb.com/images/coches/logo-taller-1.png"/></Col>
+                <Col className="logEme"><img className="logEm" src="https://cdn.niviweb.com/images/coches/logo-taller-1.png" /></Col>
                 <Col>
                     <Row className="repT">REPARACION Nº</Row>
                     <Row className="repC">{props.data.repair_number}</Row>
@@ -27,53 +27,48 @@ const Card = (props) => {
                     <Row className="htitleC">{props.data.clientEmail}</Row>
                 </Col>
             </Row>
-            <Col></Col>
+            <Row className="titlDesc">Descripción general de la avería por el cliente</Row>
+            <Row className="contDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis et eligendi saepe voluptas. Error pariatur temporibus reprehenderit dolorum tenetur perferendis nam optio fuga voluptatum quaerat, nulla modi! Unde, at?</Row>
             {/* ************** <-- Body --> ************* */}
-
-            <Col>
-                <Col>
-                    <Col className="descri">Descripción General de la Averia</Col>
-                    <Col className="descri content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis et eligendi saepe voluptas. Error pariatur temporibus reprehenderit dolorum tenetur perferendis nam optio fuga voluptatum quaerat, nulla modi! Unde, at?</Col>
+            <Row className="Conts">
+                <Col className="ContsCo">
                     <Row>
-                        <Col className="descri content">MODELO</Col>
-                        <Col>{props.data.model}</Col>
+                        <Col className="longModel">MODELO</Col>
+                        <Col className="shortModel">{props.data.model}</Col>
                     </Row>
                     <Row>
-                        <Col className="content">MARCA</Col>
-                        <Col>{props.data.brand}</Col>
+                        <Col className="longModel">MARCA</Col>
+                        <Col className="shortModel">{props.data.brand}</Col>
                     </Row>
                     <Row>
-                        <Col className="content">COMPAÑIA DE SEGUROS</Col>
-                        <Col>{props.data.insurance_company}</Col>
+                        <Col className="longModel">COMPAÑIA DE SEGUROS</Col>
+                        <Col className="shortModel">{props.data.insurance_company}</Col>
                     </Row>
                     <Row>
-                        <Col className="content">FECHA DE ENTRADA</Col>
-                        <Col>{props.data.entry_date}</Col>
+                        <Col className="longModel">FECHA DE ENTRADA</Col>
+                        <Col className="shortModel">{props.data.entry_date}</Col>
                     </Row>
                     <Row>
-                        <Col className="content">PRECIO</Col>
-                        <Col>{props.data.price + " €"}</Col>
+                        <Col className="longModel">PRECIO</Col>
+                        <Col className="shortModel">{props.data.price + " €"}</Col>
                     </Row>
                     <Row>
-                        <Col className="content">FECHA MATRICULACION</Col>
-                        <Col>{props.data.registration_year}</Col>
+                        <Col className="longModel">FECHA DE MATRICULACION</Col>
+                        <Col className="shortModel">{props.data.registration_year}</Col>
                     </Row>
                 </Col>
-                {/* <Row>{props.data.image.data}</Row> */}
-            </Col>
-            {/* ************** <-- Footer  TECHNICAL & SUPPORT--> ************* */}
-            <Col></Col>
-            <Col>
-                <Col>AVERIA</Col>
-                <Col>{props.data.fault_description}</Col>
-            </Col>
-            <Col></Col>
-            <Col>
-                <Col>MANTENIMIENTO</Col>
-                <Col>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas facilis, delectus molestiae soluta accusantium esse!
+                <Col className="imgA">
+                    {props.data.image.type}
+                </Col>
+            </Row>
+            <Row className="titlDesc">AVERIA</Row>
+            <Row className="contDesc">
+                {"- " + props.data.fault_description}
+            </Row>
+            <Row className="titlDesc">MANTENIMIENTO</Row>
+            <Row className="contDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas facilis, delectus molestiae soluta accusantium esse!
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ea facere eos autem rerum nam sed ad animi voluptatum optio! Accusantium omnis doloremque, alias repellat iusto dolorum provident tempore consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas facilis, delectus molestiae soluta accusantium esse!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ea facere eos autem rerum nam sed ad animi voluptatum optio! Accusantium omnis doloremque, alias repellat iusto dolorum provident tempore consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas</Col>
-            </Col>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ea facere eos autem rerum nam sed ad animi voluptatum optio! Accusantium omnis doloremque, alias repellat iusto dolorum provident tempore consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas</Row>
         </Container>
     )
 }
