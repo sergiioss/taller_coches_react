@@ -2,11 +2,11 @@ import React from 'react'
 import './Card.css'
 import { Container, Col, Row } from 'react-bootstrap'
 
-
 const Card = (props) => {
     return (
         <Container className="cardCont">
-            {/* ************** <-- Header --> ************* */}
+
+            {/* **************************************** <-- Header --> *************************************** */}
 
             <Row>
                 <Col className="logEme"><img className="logEm" src="https://cdn.niviweb.com/images/coches/logo-taller-1.png" /></Col>
@@ -28,8 +28,10 @@ const Card = (props) => {
                 </Col>
             </Row>
             <Row className="titlDesc">Descripción general de la avería por el cliente</Row>
-            <Row className="contDesc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis et eligendi saepe voluptas. Error pariatur temporibus reprehenderit dolorum tenetur perferendis nam optio fuga voluptatum quaerat, nulla modi! Unde, at?</Row>
-            {/* ************** <-- Body --> ************* */}
+            <Row className="contDesc">- Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi blanditiis et eligendi saepe voluptas. Error pariatur temporibus reprehenderit dolorum tenetur perferendis nam optio fuga voluptatum quaerat, nulla modi! Unde, at?</Row>
+
+            {/* **************************************** <-- Body --> *************************************** */}
+
             <Row className="Conts">
                 <Col className="ContsCo">
                     <Row>
@@ -61,14 +63,18 @@ const Card = (props) => {
                     {props.data.image.type}
                 </Col>
             </Row>
+
+            {/* **************************************** <-- Footer --> *************************************** */}
+
             <Row className="titlDesc">AVERIA</Row>
             <Row className="contDesc">
                 {"- " + props.data.fault_description}
             </Row>
             <Row className="titlDesc">MANTENIMIENTO</Row>
-            <Row className="contDesc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas facilis, delectus molestiae soluta accusantium esse!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ea facere eos autem rerum nam sed ad animi voluptatum optio! Accusantium omnis doloremque, alias repellat iusto dolorum provident tempore consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas facilis, delectus molestiae soluta accusantium esse!
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ea facere eos autem rerum nam sed ad animi voluptatum optio! Accusantium omnis doloremque, alias repellat iusto dolorum provident tempore consectetur!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas</Row>
+            <Row className="contDesc">
+                - Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus ad error sed voluptas,   debitis alias doloremque tempora dicta quasi aliquam corrupti magnam quam quas facilis, delectus molestiae soluta    accusantium esse!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ea facere eos autem rerum nam sed ad animivoluptatum    optio! Accusantium omnis doloremque, alias repellat iusto dolorum provident tempore consectetur!Loremipsum dolor sit   amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremquetempora dicta quasi    aliquam corrupti magnam quam quas facilis, delectus molestiae soluta accusantium esse!
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla ea facere eos autem rerum nam sed ad animivoluptatum    optio! Accusantium omnis doloremque, alias repellat iusto dolorum provident tempore consectetur!Loremipsum dolor sit   amet, consectetur adipisicing elit. Ducimus ad error sed voluptas, debitis alias doloremquetempora dicta quasi    aliquam corrupti magnam quam quas</Row>
         </Container>
     )
 }

@@ -5,7 +5,10 @@ import { useState } from 'react'
 import axios from 'axios'
 import { useEffect } from 'react'
 import Card from '../../Components/Card/Card'
-import { produceWithPatches } from 'immer'
+import Button from 'react-bootstrap/Button';
+import Form from 'react-bootstrap/Form';
+import InputGroup from 'react-bootstrap/InputGroup';
+import {Row} from 'react-bootstrap';
 
 
 const Repairs = (props) => {
@@ -27,6 +30,18 @@ const Repairs = (props) => {
         <div className="repairs">
             <div><NavLink className="back" to="/"><img className="arrow" src="https://cdn-icons-png.flaticon.com/512/1174/1174407.png"></img>Atras</NavLink>
             </div>
+            <Row xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
+                <InputGroup className="mb-5">
+                    <Form.Control
+                        placeholder="Buscar reparación"
+                        aria-label="Recipient's username"
+                        aria-describedby="basic-addon2"
+                    />
+                    <Button variant="outline-secondary" id="button-addon2">
+                        Button
+                    </Button>
+                </InputGroup>
+            </Row>
             {/* icono cargando */}
             {/* https://cdn-icons-png.flaticon.com/512/3305/3305803.png */}
             <div className="rep">

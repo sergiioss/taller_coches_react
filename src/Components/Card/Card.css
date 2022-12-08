@@ -16,8 +16,7 @@
     padding-top: 5px;
     height: 140px;
     background-color: antiquewhite;
-    border-top: 2px solid;
-    border-left: 2px solid;
+    border:1px solid;
 }
 .repT {
     display: flex;
@@ -26,9 +25,7 @@
     width: 150px;
     height: 80px;
     background-color: blueviolet;
-    border-top: 2px solid;
-    border-right: 2px solid;
-    border-left: 2px solid;
+    border:1px solid;
 
 }
 .repC {
@@ -38,9 +35,7 @@
     width: 150px;
     height: 60px;
     background-color: rgb(202, 136, 24);
-    border-right: 2px solid;
-    border-top: 2px solid;
-    border-left: 2px solid;
+    border:1px solid;
 }
 .htitle {
     width: 443px;
@@ -48,8 +43,7 @@
     padding-top: 5px;
     padding-left: 5px;
     background-color: brown;
-    border-top: 2px solid;
-    border-right: 2px solid;
+    border:1px solid;
 }
 .htitleC {
     width: 450px;
@@ -57,15 +51,13 @@
     padding-top: 5px;
     padding-left: 5px;
     background-color: rgb(38, 146, 69);
-    border-top: 2px solid;
-    border-right: 2px solid;
+    border:1px solid;
 }
 .contDesc{
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    border:1px solid;
     padding: 10px;
     width: 1315px;
     text-align: left;
@@ -75,8 +67,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-top: 2px solid;
-    border-bottom: 2px solid;
+    border:1px solid;
     width: 1315px;
     background-color: aqua;
 }
@@ -94,22 +85,22 @@
     align-items: center;
     text-align: left;
     background-color: brown;
-    border: 2px solid;
+    border:1px solid;
 }
 .shortModel{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 41.5px;
+    height: 42px;
     background-color: aliceblue;
-    border: 2px solid;
+    border:1px solid;
 }
 .imgA{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 250px;
+    height: 252px;
     background-color: chartreuse;
-    border: 2px solid;
+    border:1px solid;
 }
 
