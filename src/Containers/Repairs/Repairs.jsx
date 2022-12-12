@@ -8,12 +8,16 @@ import Card from '../../Components/Card/Card'
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import InputGroup from 'react-bootstrap/InputGroup';
-import {Row} from 'react-bootstrap';
+import { Row, Container } from 'react-bootstrap';
 
 
 const Repairs = (props) => {
+
     const [repairs, setRepairs] = useState({
-        repair: []
+        repair: [],
+        rep: "",
+        busqueda: ""
+
     });
 
     useEffect(() => {
@@ -24,26 +28,49 @@ const Repairs = (props) => {
                 })
             })
     }, [])
-    console.log(repairs.repair)
+
+    const start = (event) => {
+        setRepairs({
+            ...repairs,
+            [event.target.name]: event.target.value
+        })
+    }
+
+    const finishEnter = (event) => {
+        if (event.key === "Enter") {
+            console.log(repairs.busqueda)
+            setTimeout(() => {
+                event.target.value = ""
+            }, 20)
+        }
+    }
+    const finishClick = (event) => {
+        console.log(repairs.busqueda)
+        setTimeout(() => {
+            event.target.value = ""
+        }, 20)
+    }
 
     return (
-        <div className="repairs">
-            <div><NavLink className="back" to="/"><img className="arrow" src="https://cdn-icons-png.flaticon.com/512/1174/1174407.png"></img>Atras</NavLink>
-            </div>
-            <Row xs={12} sm={12} md={12} lg={12} xl={12} xxl={12}>
-                <InputGroup className="mb-5">
+        <Container className="repairs">
+            <Row xs={12} sm={12} md={12} lg={12} xl={12} xxl={12} className="backImg"><NavLink className="back" to="/"><img className="arrow" src="https://cdn-icons-png.flaticon.com/512/1174/1174407.png"></img>Atras</NavLink>
+            </Row>
+            <Row xs={3} sm={3} md={3} lg={3} xl={3} xxl={3}>
+                <InputGroup className="mb-5" onChange={start}>
                     <Form.Control
                         placeholder="Buscar reparación"
                         aria-label="Recipient's username"
                         aria-describedby="basic-addon2"
+                        className="input-form"
+                        type="text"
+                        name="busqueda"
+                        onKeyUp={finishEnter}
                     />
-                    <Button variant="outline-secondary" id="button-addon2">
-                        Button
+                    <Button variant="outline-secondary" id="button-addon2" onClick={finishClick}>
+                        <img className="arrow" src="https://cdn-icons-png.flaticon.com/512/51/51658.png" />
                     </Button>
                 </InputGroup>
             </Row>
-            {/* icono cargando */}
-            {/* https://cdn-icons-png.flaticon.com/512/3305/3305803.png */}
             <div className="rep">
                 {
                     repairs.repair.map((rep, i) =>
@@ -51,7 +78,7 @@ const Repairs = (props) => {
                     )
                 }
             </div>
-        </div>
+        </Container>
     )
 
 }

@@ -1,10 +1,14 @@
 .repairs{
     display: flex;
-    justify-content: left;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     background-color: white;
     height: auto;
+}
+.backImg{
+    text-align: left;
+    width: 100vw;
 }
 .back{
     all:unset;
