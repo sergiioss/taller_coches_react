@@ -16,7 +16,7 @@ const Repairs = (props) => {
     const [repairs, setRepairs] = useState({
         repair: [],
         rep: "",
-        busqueda: ""
+        search: ""
 
     });
 
@@ -38,14 +38,14 @@ const Repairs = (props) => {
 
     const finishEnter = (event) => {
         if (event.key === "Enter") {
-            console.log(repairs.busqueda)
+            console.log(repairs.search)
             setTimeout(() => {
                 event.target.value = ""
             }, 20)
         }
     }
     const finishClick = (event) => {
-        console.log(repairs.busqueda)
+        console.log(repairs.search)
         setTimeout(() => {
             event.target.value = ""
         }, 20)
